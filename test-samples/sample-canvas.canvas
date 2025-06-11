@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "node1",
+      "type": "text",
+      "x": 100,
+      "y": 100,
+      "width": 200,
+      "height": 100,
+      "text": "Welcome to Canvas2Canvas!\n\nThis is a sample text node that will be converted to a FigJam sticky note.",
+      "color": "#FFEB3B"
+    },
+    {
+      "id": "node2",
+      "type": "file",
+      "x": 400,
+      "y": 100,
+      "width": 180,
+      "height": 80,
+      "file": "Documents/project-notes.md",
+      "subpath": "## Implementation Notes"
+    },
+    {
+      "id": "node3",
+      "type": "link",
+      "x": 100,
+      "y": 300,
+      "width": 250,
+      "height": 60,
+      "url": "https://help.obsidian.md/Plugins/Canvas",
+      "color": "#E8F5E8"
+    },
+    {
+      "id": "node4",
+      "type": "group",
+      "x": 350,
+      "y": 250,
+      "width": 300,
+      "height": 200,
+      "label": "Development Ideas",
+      "background": "#F3E5F5"
+    },
+    {
+      "id": "node5",
+      "type": "text",
+      "x": 370,
+      "y": 290,
+      "width": 120,
+      "height": 60,
+      "text": "Feature A",
+      "color": "#E3F2FD"
+    },
+    {
+      "id": "node6",
+      "type": "text",
+      "x": 510,
+      "y": 290,
+      "width": 120,
+      "height": 60,
+      "text": "Feature B",
+      "color": "#E3F2FD"
+    },
+    {
+      "id": "node7",
+      "type": "text",
+      "x": 370,
+      "y": 370,
+      "width": 260,
+      "height": 60,
+      "text": "Integration Testing",
+      "color": "#FFF3E0"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "fromNode": "node1",
+      "toNode": "node2",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge2",
+      "fromNode": "node1",
+      "toNode": "node3",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge3",
+      "fromNode": "node2",
+      "toNode": "node4",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "relates to"
+    },
+    {
+      "id": "edge4",
+      "fromNode": "node5",
+      "toNode": "node6",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge5",
+      "fromNode": "node5",
+      "toNode": "node7",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge6",
+      "fromNode": "node6",
+      "toNode": "node7",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    }
+  ]
+}

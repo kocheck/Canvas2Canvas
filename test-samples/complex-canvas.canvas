@@ -1,0 +1,184 @@
+{
+  "nodes": [
+    {
+      "id": "central-idea",
+      "type": "text",
+      "x": 300,
+      "y": 200,
+      "width": 200,
+      "height": 100,
+      "text": "Central Concept\n\nThis is the main idea that connects everything else.",
+      "color": "#FF6B6B"
+    },
+    {
+      "id": "research-doc",
+      "type": "file",
+      "x": 50,
+      "y": 50,
+      "width": 150,
+      "height": 80,
+      "file": "Research/market-analysis.pdf",
+      "subpath": "page 15"
+    },
+    {
+      "id": "competitor-link",
+      "type": "link",
+      "x": 550,
+      "y": 50,
+      "width": 200,
+      "height": 60,
+      "url": "https://competitor-analysis.com/report",
+      "color": "#4ECDC4"
+    },
+    {
+      "id": "team-notes",
+      "type": "group",
+      "x": 100,
+      "y": 350,
+      "width": 400,
+      "height": 200,
+      "label": "Team Brainstorming Session",
+      "background": "#FFE66D"
+    },
+    {
+      "id": "idea-1",
+      "type": "text",
+      "x": 120,
+      "y": 390,
+      "width": 100,
+      "height": 60,
+      "text": "Mobile App",
+      "color": "#A8E6CF"
+    },
+    {
+      "id": "idea-2",
+      "type": "text",
+      "x": 240,
+      "y": 390,
+      "width": 100,
+      "height": 60,
+      "text": "Web Platform",
+      "color": "#A8E6CF"
+    },
+    {
+      "id": "idea-3",
+      "type": "text",
+      "x": 360,
+      "y": 390,
+      "width": 120,
+      "height": 60,
+      "text": "API Integration",
+      "color": "#A8E6CF"
+    },
+    {
+      "id": "priority-high",
+      "type": "text",
+      "x": 180,
+      "y": 480,
+      "width": 80,
+      "height": 50,
+      "text": "HIGH\nPRIORITY",
+      "color": "#FF8A80"
+    },
+    {
+      "id": "priority-medium",
+      "type": "text",
+      "x": 280,
+      "y": 480,
+      "width": 80,
+      "height": 50,
+      "text": "MEDIUM\nPRIORITY",
+      "color": "#FFD54F"
+    },
+    {
+      "id": "external-resource",
+      "type": "link",
+      "x": 600,
+      "y": 300,
+      "width": 150,
+      "height": 80,
+      "url": "https://docs.figma.com/api",
+      "color": "#B39DDB"
+    },
+    {
+      "id": "meeting-notes",
+      "type": "file",
+      "x": 50,
+      "y": 600,
+      "width": 180,
+      "height": 70,
+      "file": "Meetings/2025-06-10-planning.md",
+      "subpath": "Action Items"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "fromNode": "research-doc",
+      "toNode": "central-idea",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "informs"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "competitor-link",
+      "toNode": "central-idea",
+      "fromSide": "left",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "central-idea",
+      "toNode": "team-notes",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "leads to"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "idea-1",
+      "toNode": "priority-high",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge-5",
+      "fromNode": "idea-2",
+      "toNode": "priority-medium",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge-6",
+      "fromNode": "idea-3",
+      "toNode": "external-resource",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "requires"
+    },
+    {
+      "id": "edge-7",
+      "fromNode": "team-notes",
+      "toNode": "meeting-notes",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "documented in"
+    },
+    {
+      "id": "edge-8",
+      "fromNode": "central-idea",
+      "toNode": "external-resource",
+      "fromSide": "right",
+      "toSide": "top",
+      "toEnd": "arrow"
+    }
+  ]
+}

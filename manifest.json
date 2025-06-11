@@ -1,0 +1,9 @@
+{
+  "name": "Canvas2Canvas",
+  "id": "canvas2canvas",
+  "api": "1.0.0",
+  "main": "dist/main.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figjam"],
+  "permissions": ["currentuser"]
+}
